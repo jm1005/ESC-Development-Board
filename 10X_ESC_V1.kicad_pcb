@@ -117,6 +117,7 @@
 		)
 		(capping no)
 		(filling no)
+		(zone_defaults)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
@@ -18200,6 +18201,65 @@
 		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "bb910df0-8d1c-4f59-a6d4-f9b285461b12")
+	)
+	(zone
+		(net "GND")
+		(layer "In1.Cu")
+		(uuid "536f3092-ce53-408d-aff5-8b39b74882a7")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0.5)
+		)
+		(min_thickness 0.25)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 0)
+		)
+		(polygon
+			(pts
+				(xy 149.5 88) (xy 149.5 110) (xy 186.5 110) (xy 186 88)
+			)
+		)
+		(filled_polygon
+			(layer "In1.Cu")
+			(pts
+				(xy 185.412539 88.670185) (xy 185.458294 88.722989) (xy 185.4695 88.7745) (xy 185.4695 108.9255)
+				(xy 185.449815 108.992539) (xy 185.397011 109.038294) (xy 185.3455 109.0495) (xy 150.1945 109.0495)
+				(xy 150.127461 109.029815) (xy 150.081706 108.977011) (xy 150.0705 108.9255) (xy 150.0705 88.7745)
+				(xy 150.090185 88.707461) (xy 150.142989 88.661706) (xy 150.1945 88.6505) (xy 185.3455 88.6505)
+			)
+		)
+	)
+	(zone
+		(net "+BATT")
+		(layer "In2.Cu")
+		(uuid "95693df9-388c-4a94-9299-8afd12e4ad77")
+		(hatch edge 0.5)
+		(priority 1)
+		(connect_pads
+			(clearance 0.5)
+		)
+		(min_thickness 0.25)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 0)
+		)
+		(polygon
+			(pts
+				(xy 186 88) (xy 149.5 88) (xy 149.5 110) (xy 186.5 110)
+			)
+		)
+		(filled_polygon
+			(layer "In2.Cu")
+			(pts
+				(xy 185.412539 88.670185) (xy 185.458294 88.722989) (xy 185.4695 88.7745) (xy 185.4695 108.9255)
+				(xy 185.449815 108.992539) (xy 185.397011 109.038294) (xy 185.3455 109.0495) (xy 150.1945 109.0495)
+				(xy 150.127461 109.029815) (xy 150.081706 108.977011) (xy 150.0705 108.9255) (xy 150.0705 88.7745)
+				(xy 150.090185 88.707461) (xy 150.142989 88.661706) (xy 150.1945 88.6505) (xy 185.3455 88.6505)
+			)
+		)
 	)
 	(embedded_fonts no)
 )
